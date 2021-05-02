@@ -7,7 +7,7 @@ const LocationAddress = document.querySelector('input')
 const msgOne = document.querySelector('#msg-1')
 const msgTwo = document.querySelector('#msg-2')
 
-msgOne.textContent='from javascript'
+msgOne.textContent='from browser'
 
 
 weatherForm.addEventListener('submit',(e)=>{
