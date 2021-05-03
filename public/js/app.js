@@ -1,7 +1,3 @@
-
-
-
-
 const weatherForm = document.querySelector('form')
 const LocationAddress = document.querySelector('input')
 const msgOne = document.querySelector('#msg-1')
@@ -14,7 +10,7 @@ weatherForm.addEventListener('submit',(e)=>{
 	e.preventDefault();
 	const addresslocation = LocationAddress.value
 	msgTwo.textContent='Loading...'
-	fetch('http://127.0.0.1:3000/weather?address='+addresslocation).then((response)=>{
+	fetch('/weather?address='+addresslocation).then((response)=>{
 		response.json().then((data)=>{
 			if(data.error){
 				msgTwo.textContent="error : the address not good"
