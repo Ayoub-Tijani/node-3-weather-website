@@ -9,7 +9,7 @@ const forcast = (latitude,longtitude,callback)=>{
 		}else if(body.error){
 			callback("the cordinate given't not correct",undefined)
 		}else{
-			callback(undefined,"Country Name : "+body.location.country) 
+			callback(undefined,"Location Name : "+body.location.name+" "+body.location.country+" "+body.location.region+"temperature: "+body.current.temperature) 
 		} 
 	})
 }
